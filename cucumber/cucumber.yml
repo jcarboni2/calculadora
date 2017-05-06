@@ -1,6 +1,6 @@
 ##YAML Template
 ---
-default: -p html_report -p poltergeist -p qa
+default: -p html_report -p qa -p poltergeist
 ci: -p json_report -p poltergeist -p qa
 html_report: --format pretty --format html --out=reports/features_report.html
 json_report: --format progress --format json --out=reports/features_report.json
@@ -8,6 +8,7 @@ firefox: BROWSER=firefox
 chrome: BROWSER=chrome
 poltergeist: BROWSER=poltergeist
 safari: BROWSER=safari
+ie: BROWSER=internet_explorer
 dev: ENVIRONMENT_TYPE=dev
 qa: ENVIRONMENT_TYPE=qa
 uat: ENVIRONMENT_TYPE=uat
